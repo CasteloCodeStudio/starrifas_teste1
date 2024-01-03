@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifa</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo-img" src="./img/logofinal1.png">
+        </div>
+    </div>
+    <div class="nav-buttons">
+        <nav>
+            <ul class="nav-bar">
+                <a href="./InfoPage/index.html"><div style="cursor: pointer; margin-right: 20px;" class="navheader">Sobre nós</div></a>
+            </ul>
+        </nav>
+
+       <div class="person navheader" style=" cursor: pointer; margin-right: 20px; background-color: rgb(252, 206, 0);color: black; border-radius: 10px; padding: 10px 30px;">Conta</div>
+    </div>
+
+    </header>
+
+        <img class="backgroundrifa" src="./img/backgroundrifa.png">
+
+
+    <div class="search-bar">
+    <input class="input-search" type="search">
+    <div class="material-icons search-icon" style="cursor: pointer; color: black;">search</div>
+    </div>
+
+    <!--Card das rifas-->
+
+<div class="rifaCard">
+
+
+
+
+
+    <div class="card">
+        <div class="img-card">
+            <img id="img-card" src="./img/backgroundrifa.png">
+        </div>
+        <div class="description">
+            <h2 id="name-tittle">titulo</h2>
+            <p id="label">ass sdkf dfdss</p>
+            <h1 id="price">R$00,00</h1>
+        
+            <a href="./payment/index.html"><button class="open-card">Comprar</button></a>
+            <button class="material-icons delete-item" id="delete-item" style="background-color: red;">delete</button>
+        </div>
+    </div>  
+
+    
+
+
+
+</div>
+
+    <!--Botões flutuantes para o ADM-->
+
+    <div onclick="menuShow()" id="menu-button" class="button-edit">
+        <i class="material-icons">create</i>
+    </div>
+
+    <div class="buttons">
+        <i onclick="createRifa()" id="button-add" class="material-icons" style="background-color: green;">add</i>
+        <i onclick="removeItem()" id="button-delete" class="material-icons button-delete" style="background-color: red;">delete</i>
+        <i onclick="openList()" id="button-list" class="material-icons button-list" style="background-color: blue;">list</i>
+    </div>
+
+
+    
+
+    <!--Pagina de criação de rifa-->
+
+    <div class="create-page">
+
+        <input class="inputImg" type="file" onchange="cropImage()" accept="image/png, image/jpeg">
+
+        <h4>Titulo:</h4>
+        <input style="width: 90%; height: 5vh;" type="text">
+
+        <h4>Descrição:</h4>
+        <input style="width: 90%; height: 5vh;" type="text">
+
+        <h4>Quantidade de numeros:</h4>
+        <input style="height: 5vh;" type="number">
+
+        <h4>Valor em R$:</h4>
+        <input type="number">   
+
+        <button class="add-rifa">Adicionar</button>
+        <button onclick="createRifa()" class="material-icons button-close">close</button>
+
+    </div>
+
+    <footer>
+        <p>.......</p>
+    </footer>
+    <script src="./script.js"></script>
+
+    <div class="options">
+        <nav>
+            <ul class="menu-bar">
+                <li class="button-menu">Rifas</li>
+                <a href="./InfoPage/index.html"><li class="button-menu on-button">Informações</li></a>
+            </ul>
+        </nav>
+    </div>
+
+    <!--Mensagem flutuante info-div-->
+
+    
+</body>
+
+
+</html>

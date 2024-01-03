@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    user-select: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 15vh;
+}
+
+.backgroundrifa{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.open-card{
+    margin-right: 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-img{
+    width: 120px;
+    position: relative;
+    top: 4px;
+}
+
+.tittle{
+line-height: 25px;
+font-weight: 800;
+font-size: 30px;
+color: rgb(255, 255, 255);
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button{
+    list-style: none;
+    line-height: 15px;
+    margin: 0px 5vh;
+    font-weight: 200;
+    color: black;
+}
+
+.navheader{
+    font-size: 17px;
+    color: white;
+    font-weight: 400;
+    margin-left: 60px;
+}
+
+.nav-buttons{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-edit:hover,button:hover{
+    cursor: pointer;
+    background-color: rgb(205, 205, 205);
+}
+
+
+
+.search-bar{
+    margin-top: 10px;
+    width: 50%;
+    height: 7vh;
+    border: 1px grey solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-search{
+    width: 90%;
+    height: 6vh;
+    border-style: none;
+    margin-right: 10px;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+}
+
+
+.rifaCard{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 40%;
+    height: 50vh;
+    background-color: white;
+    margin: 20px 0px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px grey solid;
+
+}
+
+
+.img-card{
+width: 100%;
+height: 5vh;
+background-color: white;
+border-radius: 10px 0px 0px 10px;
+border: none;
+object-fit: cover;
+}
+
+button{
+    color: black;
+    margin-right: 1%;
+    padding: 20px 40px;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(252, 206, 0);
+    margin-bottom: 5px;
+}
+
+#img-card{
+    width: 100%;
+    height: 30vh;
+border-radius: 20px 20px 0 0px;
+    object-fit: cover;
+    
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    background-color: white;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.button-edit{
+    display: none;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: fixed;
+    top:80vh;
+    left:90%;
+}
+
+.button-edit.open{
+    display: block;
+}
+
+.material-icons{
+    color: white;
+}
+
+.rifa-page,.rifa-page-add{
+    border-radius: 20px;
+    width: 80%;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    top: 5%;
+    left: 10%;
+    height: 90vh;
+    background-color: rgb(223, 223, 223);
+}
+
+.rifa-page.open{
+    display: block;
+}
+
+.rifa-page-add.open{
+    display: block;
+}
+.nav-number{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+
+#number{
+    display: flex;
+    background-color: rgb(205, 205, 205);
+    padding: 20px 30px;
+    margin: 20px;
+    border-radius: 20px;font-weight: 700;
+    font-size: 20px;
+}
+
+#number:active{
+    background-color: blue;
+    color: white;
+}
+
+.buttons.open{
+    display: flex;
+}
+
+.buttons{
+    display: none;
+    flex-direction: column-reverse;
+    position: fixed;
+    left: 90%;
+    bottom: 21%;
+}
+
+#button-add, #button-delete,#button-list{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+border-radius: 50%;
+margin-bottom:5px;
+cursor: pointer;
+}
+
+.delete-item{
+    display: none;
+}
+
+#button-list{
+  cursor: pointer;
+}
+
+.delete-item.open{
+    display: block;
+}
+
+
+.create-page.open{
+    display: flex;
+}
+
+.create-page{
+    border-radius: 20px;
+    width: 80%;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    top: 5%;
+    left: 10%;
+    height: 90vh;
+    background-color: rgb(223, 223, 223);
+}
+
+.inputImg{
+    margin: 15px;
+    padding: 40px 30px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    display: flex;
+    font-size: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    background-color: black;
+    color: grey;
+}
+
+.button-acess{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 20px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px white solid;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    position: relative;
+    left: 15px;
+}
+
+.add-rifa{
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+}
+
+.button-close{
+color: rgb(59, 59, 59);border-radius: 50px;padding: 20px; background-color: rgb(182, 182, 182);position: fixed;left:90%;bottom:85%;
+}
+
+.menu-close,.menu-acess{
+    display: none;
+}
+
+.options{
+    display: none;
+}
+
+.info-delete{
+    position: absolute;
+    width: 160%;
+    font-weight: 600;
+}
+
+@media (max-width:650px) {
+    .nav-button{
+        display: none;
+    }
+
+
+    header{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+    }
+
+    .pageRifa{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .logo-img{
+        width: 40%;
+    }
+     
+    .rifaCard{
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+
+    .card{
+        width: 90%;
+        height: 30vh;
+        margin: 10px 0;
+        border: 1px gray solid;
+        margin-bottom: 140px;
+    }
+
+    .description{
+        font-size: 10px;
+        width: 100%;
+        border: 1px grey solid;
+    }
+
+    .navheader{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+.backgroundrifa{
+    height: auto;
+}
+
+    .card,.img-card,.description,#img-card{
+        height: 12vh;
+    }
+
+    .open-card,.delete-item{
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .button-edit{
+        top: 87%;
+        left: 80%;
+    }
+
+    .buttons{
+        top: 87%;
+        left: 80%;
+    }
+
+    .button-edit:hover{
+        background-color: black;
+    }
+
+    .acessPage{
+        top:5%;
+        height: 20vh;
+        width: 50%;
+        left: 50%;
+    }
+
+    .create-page{   
+        width: 100%;
+        left: 0%;
+        top: 10%;
+    }
+
+    .button-close{
+        color: white;
+        background-color: red;
+        bottom: 90%;
+        left: 45%;
+    }
+
+    .inputImg{
+        padding: 60px 24px;
+        font-size: 15px;
+    }
+
+    .rifa-page{
+        width: 100%;
+        left:0;
+        top:70px;
+    }
+
+    .menu-acess{
+        display: flex;
+    }
+
+    .options{
+        display: none;
+        background-color: black;
+        width: 60%;
+        height: 300px;
+        border-radius: 20px;
+        position: relative;
+        left:50%;
+        bottom: 18.5%;
+    }
+
+    .options.open{
+        display: flex;
+        margin: none;
+        width: 50%;
+    }
+
+
+    .button-menu{
+        background-color: white;
+        font-weight: 600;
+        border-radius: 20px;
+        padding: 20px 15px;
+        margin: 40px 0px;
+        list-style: none;
+        font-size: 20px;
+        position: relative;
+        right: 10px;
+    }
+
+    .on-button{
+        background-color: black;
+    }
+
+    .search-bar{
+        width: 95%;
+        height: 4vh;
+    }
+
+    .input-search{
+        height: 3vh;
+        border-radius: 10px;
+    }
+}

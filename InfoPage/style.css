@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    user-select: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: rgb(252, 206, 0);
+    position: fixed;
+    
+}
+
+
+button{
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    color: rgb(252, 206, 0);
+
+}
+
+.log{
+    display: flex;
+}
+
+.page1{
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: move 1s ease-in-out;
+    font-weight: 900;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+@keyframes move {
+    0%{
+        translate: -50px;;
+        opacity: 0;
+    }
+    100%{
+        translate: 0;
+        opacity: 1;
+    }
+}
+
+.rifasbutton{
+    background-color: black;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+h2{
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+}
+h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.page2image{
+    width: 60%;
+}
+
+.reason{
+    display: flex;
+}
+
+.material-icons{
+    color: rgb(252, 206, 0);
+}
+
+
+@media (max-width:750px) {
+
+    h2{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+    h3{
+        font-size: 15px;
+    }
+
+    .page1{
+        width: 90%;
+    }
+
+}
